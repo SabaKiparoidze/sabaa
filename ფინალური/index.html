@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-banner/css/bpg-banner.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <div id="loading">
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <nav>
+        <button id="log-out-button">Log Out</button>
+        <button id="name">სახელი გვარი</h1>
+    </nav>
+
+    <aside>
+        <form id="createPost">
+            <h1 id="profile">შექმენი შენი პოსტი</h1>
+        <div id="inputs">
+            <label for="title">სახელწოდება</label>
+            <input required type="text" name="title" id="title" class="title">
+        </div>   
+        <div id="inputs">
+            <label for="content">შიგთავსი</label>
+            <textarea name="content" id="content" class="content"></textarea>
+        </div>          
+        <button id="post_button">დაპოსტვა</button>
+        </form>
+    </aside>
+
+    <div id="feed">
+
+
+
+        <div class="container">
+            
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./verify.js"></script>
+<script src="./feed.js"></script>
+<script src="./create.js"></script>
+<script src="./logout.js"></script>
+
+</html>
